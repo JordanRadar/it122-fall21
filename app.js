@@ -20,11 +20,11 @@ app.get('', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', {text: ' This is about'})
+  res.render('about', {text: ' About Page'})
 });
 
 app.get('/index', (req, res) => {
-  res.render('index', {text: ' This is index'})
+  res.render('index', {text: ' Main Page'})
 });
 
 let listener = app.listen();
