@@ -27,6 +27,10 @@ app.get('/index', (req, res) => {
   res.render('index', {text: ' Main Page'})
 });
 
+app.get('/randog', (req, res) => {
+  res.render('randog', { text: 'Randog'})
+});
+
 let listener = app.listen();
 console.log(`Listening to port number ${listener.address().port}`);
 
